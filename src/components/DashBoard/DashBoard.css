@@ -1,0 +1,99 @@
+.dashContainer {
+  display: flex;
+  align-items: flex-start;
+  padding: 2% 3%;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.dashCardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 12px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dashCardHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 2px solid #e9ecef;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.columnCounter {
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #495057;
+}
+
+/* Add these new styles for the filter section */
+.filterSection {
+  width: 100%;
+  padding: 15px 3%;
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  padding: 6px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: white;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filterButton:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.filterButton.active {
+  background: #339af0;
+  color: white;
+  border-color: #339af0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .dashCardContainer {
+    width: 30%;
+    /* Adjust the width based on your design */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashCardContainer {
+    width: 45%;
+    /* Adjust the width based on your design */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dashCardContainer {
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+
+  .dashCardHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
